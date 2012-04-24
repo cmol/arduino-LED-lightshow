@@ -1,7 +1,7 @@
 #ifndef Lamp_h
 #define Lamp_h
 
-#include "WProgram.h"
+#include "Arduino.h"
 
 class Lamp
 {

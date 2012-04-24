@@ -1,4 +1,4 @@
-#include "WProgram.h"
+#include "Arduino.h"
 #include "Lamp.h"
 
 // Constructor - Will just set the pin for the lamp
