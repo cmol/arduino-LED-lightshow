@@ -108,7 +108,7 @@ void noteOn(int note, int velocity) {
         for (int lamp = 0; lamp < 12; lamp++) {
           lamps[lamp].fade(1000, 10000, 0);
           lamps[lamp].blink(0,0);
-          lamps[lamp].flicker(false);
+          lamps[lamp].flicker(false, 0);
           lamps[lamp].off();
         }
         break;
@@ -117,7 +117,7 @@ void noteOn(int note, int velocity) {
         for (int lamp = 0; lamp < 12; lamp++) {
           lamps[lamp].fade(1000, 10000, 0);
           lamps[lamp].blink(0,0);
-          lamps[lamp].flicker(false);
+          lamps[lamp].flicker(false, 0);
           lamps[lamp].on();
         }
         break;
@@ -125,7 +125,7 @@ void noteOn(int note, int velocity) {
         for (int lamp = 0; lamp < 12; lamp++) {
           lamps[lamp].fade(1000, 10000, 0);
           lamps[lamp].blink(0,0);
-          lamps[lamp].flicker(false);
+          lamps[lamp].flicker(false, 0);
           lamps[lamp].on();
         }
         break;
@@ -164,7 +164,8 @@ void noteOff(int note, int velocity) {
   
   // Flicker on
   else if (note > 47 && note < 60) {
-    lamps[note-48].flicker(false);
+    lamps[note-48].flicker(false, velocity);
+    lamps[note-48].off();
   }
   
   // Special functions
@@ -175,7 +176,7 @@ void noteOff(int note, int velocity) {
         for (int lamp = 0; lamp < 12; lamp++) {
           lamps[lamp].fade(1000, 10000, 0);
           lamps[lamp].blink(0,0);
-          lamps[lamp].flicker(false);
+          lamps[lamp].flicker(false, 0);
           lamps[lamp].off();
         }
         break;
@@ -215,4 +216,4 @@ void loop() {
   // This is where the fun begins
   work();
   
-}
+} 
