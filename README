@@ -1,4 +1,4 @@
-Arduino class Lamp and use with midi_lamps.pde.
+Arduino class Lamp and use with midi_lamps.ino.
 
-In order to use the class, you need to place it in the arduino class folder.
+In order to use the Lamp class, you need to place it in the arduino library folder along with other classes/libs.
 You must also download the arduino midi library.
