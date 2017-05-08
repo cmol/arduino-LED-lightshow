@@ -1,3 +1,5 @@
+*NOTE:* For a newer version with support for controlling RGB lights, see here: https://github.com/cmol/arduino-rgb
+
 Arduino class Lamp and use with midi_lamps.ino.
 
 In order to use the Lamp class, you need to place it in the arduino library folder along with other classes/libs.
